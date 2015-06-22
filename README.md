@@ -1,4 +1,4 @@
-# arduino_yun_streamer
+# arduino_streamers
 
 arduinoyunstream.ino
 --------------------
