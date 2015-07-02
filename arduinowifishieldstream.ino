@@ -46,6 +46,7 @@ String signalData[NUM_SIGNALS];
 #define HALT        true
 
 // TCP can only send a payload size of 290 when using Software Serial
+// This is not an issue when using Hardware Serial
 // 30 is how many characters are free for bucketKey, signalName, and signalData
 const int TCPLengthCap = 30;
 
@@ -192,6 +193,7 @@ boolean postData()
   for (int i=0; i<NUM_SIGNALS; i++)
   {
     // Shorten signalName and signalData if toSend will be over 290 characters
+    // Remove if using Hardware Serial
     truncateString(i);
     
     String toSend = "POST /api/events HTTP/1.1\r\n";
@@ -230,6 +232,7 @@ boolean postData()
   return true;
 }
 
+// This function can be deleted if using Hardware Serial
 void truncateString(int sigNum)
 {
   int variableLength = (sizeof(bucketKey) + signalName[sigNum].length() + signalData[sigNum].length());
