@@ -19,3 +19,10 @@ This particular sketch uses the ESP8266 connected to the Cactus Micro board, but
 You are required to provide your accessKey, bucketKey, bucketName, number of signals to be streamed, signal names, WiFi SSID and password.
 
 You may need to wait a minute or so for the module to connect to the groker.initialstate.com service.
+
+arduinoethernetshieldstream.ino
+---------------------------
+
+Arduino Sketch implementation of the Initial State events api to easily send data using an Ethernet shield.
+
+You are required to provide your accessKey, bucketKey, bucketName, number of signals to be streamed, signal names.
