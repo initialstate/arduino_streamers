@@ -86,7 +86,7 @@ void setup()  {
   // Station mode    
   echoCommand("AT+CWMODE=3", "", HALT);
   // Allow one connection    
-  echoCommand("AT+CIPMUX=1", "", HALT);    
+  echoCommand("AT+CIPMUX=0", "", HALT);    
 
   // Connect to the wifi
   boolean connection_established = false;
