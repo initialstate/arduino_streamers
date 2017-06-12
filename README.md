@@ -20,6 +20,8 @@ You are required to provide your accessKey, bucketKey, bucketName, number of sig
 
 You may need to wait a minute or so for the module to connect to the groker.initialstate.com service.
 
+NOTE: This uses the "insecure" Initial State API endpoint since many Arduinos can't handle https. For more secure streaming, route through a device capable of encryption (like a node.js hub).
+
 arduinoethernetshieldstream.ino
 ---------------------------
 
@@ -27,4 +29,16 @@ Arduino Sketch implementation of the Initial State events api to easily send dat
 
 You are required to provide your accessKey, bucketKey, bucketName, number of signals to be streamed, signal names.
 
-NOTE: This uses the "insecure" Initial State API endpoint since Arduinos can't handle https. For more secure streaming, route through a device capable of encryption (like a node.js hub).
+NOTE: This uses the "insecure" Initial State API endpoint since many Arduinos can't handle https. For more secure streaming, route through a device capable of encryption (like a node.js hub).
+
+arduinociaostream.ino
+---------------------------
+
+Arduino Sketch implementation of the Initial State events api to easily send data using the [Ciao library](http://www.arduino.org/learning/tutorials/advanced-guides/ciao).
+
+Current Ciao compatible boards include: Arduino Yun, Arduino Yun Mini, Linino One, Arduino Tian, Arduino Industrial 101
+
+You are required to provide your accessKey, bucketKey, signal names.
+
+NOTE: This uses the "insecure" Initial State API endpoint since many Arduinos can't handle https. For more secure streaming, route through a device capable of encryption (like a node.js hub).
+
