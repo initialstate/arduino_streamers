@@ -1,6 +1,6 @@
 # Streaming with Arduino
 
-arduinoyunstream.ino
+arduinoyunstream.ino (cURL)
 --------------------
 
 Arduino Yun Sketch implementation of the Initial State events api to easily send data using the Process class.
@@ -9,7 +9,7 @@ You are required to provide your accessKey, bucketKey, bucketName, number of sig
 
 The sketch will not currently return the cURL output, so be sure to check your Initial State account to ensure that your data is actually sending.
 
-arduinoESP8266wifishieldstream.ino / arduinoESP8266wifishieldstream-AT.ino
+arduinoESP8266wifishieldstream.ino / arduinoESP8266wifishieldstream-AT.ino (HTTP POST)
 ---------------------------
 
 Arduino Sketch implementation of the Initial State events api to easily send data using an ESP8266 WiFi shield.
@@ -22,7 +22,7 @@ You may need to wait a minute or so for the module to connect to the groker.init
 
 NOTE: This uses the "insecure" Initial State API endpoint since many Arduinos can't handle https. For more secure streaming, route through a device capable of encryption (like a node.js hub).
 
-arduinoethernetshieldstream.ino
+arduinoethernetshieldstream.ino (HTTP GET)
 ---------------------------
 
 Arduino Sketch implementation of the Initial State events api to easily send data using an Ethernet shield.
@@ -31,7 +31,7 @@ You are required to provide your accessKey, bucketKey, bucketName, number of sig
 
 NOTE: This uses the "insecure" Initial State API endpoint since many Arduinos can't handle https. For more secure streaming, route through a device capable of encryption (like a node.js hub).
 
-arduinociaostream.ino
+arduinociaostream.ino (URL Parameters)
 ---------------------------
 
 Arduino Sketch implementation of the Initial State events api to easily send data using the [Ciao library](http://www.arduino.org/learning/tutorials/advanced-guides/ciao).
