@@ -22,7 +22,7 @@ You may need to wait a minute or so for the module to connect to the groker.init
 
 NOTE: This uses the "insecure" Initial State API endpoint since many Arduinos can't handle https. For more secure streaming, route through a device capable of encryption (like a node.js hub).
 
-arduinoethernetshieldstream.ino (HTTP GET)
+arduino-ethernet-example.ino (HTTP GET)
 ---------------------------
 
 Arduino Sketch implementation of the Initial State events api to easily send data using an Ethernet shield.
