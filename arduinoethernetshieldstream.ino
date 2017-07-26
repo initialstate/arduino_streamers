@@ -124,7 +124,7 @@ bool postBucket() {
   client.stop();
 
   // if there's a successful connection:
-  if (client.connect(ISDestURL, 80)) {
+  if (client.connect(ISDestURL, 80) > 0) {
     Serial.println("connecting...");
     // send the HTTP PUT request:
     // Build HTTP request.
@@ -163,7 +163,7 @@ bool postData() {
   client.stop();
 
   // if there's a successful connection:
-  if (client.connect(ISDestURL, 80)) {
+  if (client.connect(ISDestURL, 80) > 0) {
     Serial.println("connecting...");
     // send the HTTP PUT request:
     // Build HTTP request.
