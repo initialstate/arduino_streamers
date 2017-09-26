@@ -49,7 +49,7 @@ void setup() {
   Serial.println("connecting...");
 
   // if you get a connection, report back via serial:
-  if (client.connect(server, 80)) {
+  if (client.connect(server, 80) > 0) {
     Serial.println("connected");
     // Make a HTTP request:
     client.println("GET /api/events?accessKey=YOUR_ACCESS_KEY&bucketKey=SOME_BUCKET_KEY&streamKey=1 HTTP/1.1");
